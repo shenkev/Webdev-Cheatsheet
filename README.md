@@ -30,6 +30,12 @@ Install node
 
 ### Initialize a project
 
+The create-react-app library takes care of all the unsexy work in setting up the development environment with React and other libraries, as well as building.
+
+
+Look at https://github.com/facebook/create-react-app#whats-included for reference for setup and building in production.
+For a summary of what create-react-app does https://stackoverflow.com/questions/50722133/what-exactly-is-the-react-scripts-start-command
+
 [1]: Project name
 
 ```npx create-react-app [1]
@@ -42,10 +48,12 @@ Install a package
 
 ```npm install [1]```
 
-### Ajax
-
-```npm i -S axios
-```
+### Libraries
+axios: let's you make ajax requests to backend
+morgan: prints the GET /api/getData 304 42.429 ms - - in console
+bodyParser: turns raw http request message into javascript object
+cors: security for which backend servers can talk to which front-end apps
+nodemon: watches your files and restarts server when they change
 
 ## Starting the servers
 
